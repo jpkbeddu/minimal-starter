@@ -9,6 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(cookieParser())
 
 app.get('*', (req, res) => {
+  console.log('Req Headers', req.headers);
   res.send('OK')
 })
 
